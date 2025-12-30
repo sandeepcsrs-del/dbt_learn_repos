@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: SOURCE_SCHEMA
+    database: DBT_ANSH
+    schema: SOURCE_SCHEMA
+    tables:
+      - name: FACT_SALES
+      - name: FACT_RETURNS
+      - name: DIM_CUSTOMER
+      - name: DIM_DATE
+      - name: DIM_PRODUCT
+      - name: DIM_STORE
