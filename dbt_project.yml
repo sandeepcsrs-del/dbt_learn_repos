@@ -33,9 +33,19 @@ models:
   dbt_learn_repos:
     bronze:
       +database: DBT_ANSH
+      +schema: BRONZE
       +materialized: table
 
-        
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    silver:
+      +database: DBT_ANSH
+      +schema: SILVER
+      +materialized: table  
+    gold:
+      +database: DBT_ANSH
+      +schema: GOLD
+      +materialized: table
+
+seeds:
+  dbt_learn_repos:
+      +database: DBT_ANSH
+      +schema: BRONZE     
