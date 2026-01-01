@@ -11,3 +11,4 @@ sources:
       - name: DIM_DATE
       - name: DIM_PRODUCT
       - name: DIM_STORE
+      - name: ITEMS
